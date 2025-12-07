@@ -13,7 +13,7 @@
             <a :href="link"><span>{{ author }}</span></a>
         </section>
         <button :disabled="isBtnDisabled">Another!</button>
-        <button :disabled="isBtnDisabled">Share</button>
+        <!-- <button :disabled="isBtnDisabled">Share</button> -->
     </main>
 </template>
 

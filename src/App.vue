@@ -7,14 +7,14 @@
 <template>
   <Header/>
   <Main/>
-  <section>
+  <!-- <section>
       <img src="/public/favicon.ico" alt="">
-  </section>
+  </section> -->
   <Footer/>
 </template>
 
 <style scoped>
-  section{
+  /* section{
     display: grid;
     padding: 10px;
     background: #406473;
@@ -22,5 +22,5 @@
   }
   img{
     width: 100%;
-  }
+  } */
 </style>
