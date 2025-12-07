@@ -1,9 +1,12 @@
 <script setup>
+    import {ref} from 'vue'
+    const heading = ref("Quote Generator")
+    heading.value = ("Minimilastics Quote")
 </script>
 
 <template>
     <header>
-        <h1>Quote Generator</h1>
+        <h1>{{ heading }}</h1>
     </header>
 </template>
 

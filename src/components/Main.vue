@@ -1,12 +1,19 @@
 <script setup>
+    import {ref} from 'vue'
+    const quote = ref("Don't overthink everything. Keep it simple🤞.")
+    const author = ref("Unknown")
+    const link = ref("https://www.google.com/?zx=1765001372542&no_sw_cr=1")
+    const isBtnDisabled = ref(true)
 </script>
 
 <template>
     <main>
         <section>
-            <p>Don't overthink everything. Keep it simple🤞.</p>
+            <p>{{ quote }}</p>
+            <a :href="link"><span>{{ author }}</span></a>
         </section>
-        <button>Another!</button>
+        <button :disabled="isBtnDisabled">Another!</button>
+        <button :disabled="isBtnDisabled">Share</button>
     </main>
 </template>
 
@@ -40,7 +47,10 @@
     p::after{
         content: '""'
     }
-    
+    a{
+        align-self: end;
+        color: #406473;
+    }
     span{
         align-self: end;
         color: #406473;
@@ -62,5 +72,10 @@
     }
     button:hover{
         transform: scale(1.05);
+    }
+    button:disabled{
+        background: grey;
+        cursor: not-allowed;
+        opacity: 0.5;
     }
 </style>

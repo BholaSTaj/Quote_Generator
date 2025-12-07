@@ -5,7 +5,7 @@
 
 <template>
     <footer>
-        Created by <span>BST</span> &copy; 2025
+        Created by <span>BST</span> &copy; {{ year }}
     </footer>
 </template>
 
